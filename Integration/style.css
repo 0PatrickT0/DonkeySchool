@@ -1,0 +1,84 @@
+img:hover {
+  z-index: 10;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+img {
+  border-radius: 3px;
+}
+img:nth-child(2n) {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+.menu-deroulant {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+/* Menu déroulant, source: https://fr.w3docs.com/tools/code-editor/5813 */
+.navbar {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.navbar li {
+  height: auto;
+  width: 150px;
+  float: left;
+  text-align: left;
+  list-style: none;
+  /*font: normal bold 13px/1em Arial, Verdana, Helvetica;*/
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+.navbar a {
+  /*padding: 18px 0;*/
+  border-left: 0px solid #ffffff;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+}
+.navbar li:hover,
+a:hover {
+  background-color: #ffffff;
+}
+.navbar li ul {
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/* Affichage du sous-menu si survol de la souris*/
+.navbar li:hover ul {
+  display: block;
+}
+/* Couleur de fond du sous-menu
+.navbar li ul li {
+  background-color: #ffffff;
+}
+/* Bordures du sous-menu
+.navbar li ul li a {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+/* Couleur de fond si survol de la souris
+.navbar li ul li a:hover {
+  background-color: #ffffff;
+}
+/* Fin du menu déroulant */
+
+.page-main {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.projets-realises {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
