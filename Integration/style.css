@@ -1,3 +1,26 @@
+@media screen and (min-width: 820px and max-width: 1180px) {
+  body {
+
+  }
+}
+@media screen and (min-width: 1180px) {
+  body {
+
+  }
+}
+
+#burger {
+  display: none;
+  list-style: none;
+}
+#burger + nav {
+  display: none;
+  list-style: none;
+}
+#burger:checked + nav {
+  display: block;
+  list-style: none;
+}
 img:hover {
   z-index: 10;
   opacity: 0.5;
@@ -10,75 +33,115 @@ img:nth-child(2n) {
   filter: grayscale(100%);
   transition: all 0.3s;
 }
-.menu-deroulant {
-  height: auto;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-/* Menu déroulant, source: https://fr.w3docs.com/tools/code-editor/5813 */
-.navbar {
-  height: auto;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-}
-.navbar li {
-  height: auto;
-  width: 150px;
-  float: left;
-  text-align: left;
-  list-style: none;
-  /*font: normal bold 13px/1em Arial, Verdana, Helvetica;*/
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-}
-.navbar a {
-  /*padding: 18px 0;*/
-  border-left: 0px solid #ffffff;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  display: block;
-}
-.navbar li:hover,
-a:hover {
-  background-color: #ffffff;
-}
-.navbar li ul {
-  display: none;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-/* Affichage du sous-menu si survol de la souris*/
-.navbar li:hover ul {
-  display: block;
-}
-/* Couleur de fond du sous-menu
-.navbar li ul li {
-  background-color: #ffffff;
-}
-/* Bordures du sous-menu
-.navbar li ul li a {
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-}
-/* Couleur de fond si survol de la souris
-.navbar li ul li a:hover {
-  background-color: #ffffff;
-}
-/* Fin du menu déroulant */
 
-.page-main {
-  height: auto;
-  padding: 0;
-  margin: 0;
+/*Début Flexbox*/
+
+#flex_projets_realises {
+  display: flex;
+  flex-flow: row wrap;
 }
-.projets-realises {
-  height: auto;
-  padding: 0;
-  margin: 0;
+.flex_projet {
+  display: flex;
+  flex-flow: column;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+.flex_projet > img {
+  order: -1;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+.flex_projet > button {
+  display: block;
+  margin-top: auto;
+
+}
+#flex_etudes_realises {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex_etudes {
+  display: flex;
+  flex-flow: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.flex_etudes > img {
+  order: -1;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+#flex_articles_publies {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex_articles {
+  display: flex;
+  flex-flow: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.flex_articles > img {
+  order: -1;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+.flex_articles > button {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: auto;
+}
+.flex_coordonnees {
+  display: flex;
+  flex-flow: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#flex_contact {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.flex_contact > button {
+  flex-direction: row-reverse;
+}
+/*Fin Flexbox*/
+/*Début formulaire*/
+form {
+  margin: 0 auto;
+  width: 300px;
+}
+form div + div {
+  margin-top: 1em;
+}
+label {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+}
+input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+input:focus, textarea:focus {
+  border-color: #000;
+}
+textarea {
+  vertical-align: top;
+  height: 7em;
+}
+.button {
+  padding-left: 90px;
+  text-align: right;
+}
+/*Fin formulaire*/
